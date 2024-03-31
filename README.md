@@ -11,7 +11,17 @@ npm i immutable
 
 npm i immer
 
-npm i redux
+npm i redux@4.0
 
 npm start
 
+
+1. install Redux DevTools extenion on Chrome
+2. npm i -D redux-devtools-extension
+
+
+Redux ToolKit
+npm i @reduxjs/toolkit@1.2.5
+
+https://github.com/reduxjs/reselect
+npm install reselect
