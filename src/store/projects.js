@@ -9,8 +9,7 @@ const slice = createSlice({
     projectAdded: (state, action) => {
       state.push({
         id: ++lastId,
-        description: action.payload.description,
-        resolved: false,
+        name: action.payload.name,
       });
     },
 
@@ -23,21 +22,11 @@ const slice = createSlice({
         state.splice(index, 1);
       }
     },
-
-    projectResolved: (state, action) => {
-      const index = state.findIndex(
-        (project) => project.id === action.payload.id
-      );
-
-      if (index !== -1) {
-        state[index].resolved = true;
-      }
-    },
   },
 });
 
 //console.log(slice);
 
-export const { projectAdded, projectRemoved, projectResolved } = slice.actions;
+export const { projectAdded, projectRemoved } = slice.actions;
 
 export default slice.reducer;

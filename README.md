@@ -25,3 +25,9 @@ npm i @reduxjs/toolkit@1.2.5
 
 https://github.com/reduxjs/reselect
 npm install reselect
+
+
+npm i axios
+
+
+npx json-server -p 9001 -w data/db.json
